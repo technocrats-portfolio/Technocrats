@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav class="navbar fixed-top navbar-expand-lg" style={{background:'var(--navbar)'}}>
     <div class="container " style={{padding:'0.5rem'}} >
-    <a class="navbar-brand fw-bold"  to="/"  style={{color:'white'}}>
+    <a class="navbar-brand fw-bold"  href='/'  style={{color:'white'}}>
                 {/* <img src="Images/logo.png" alt='' height="50"/> */}
                 TECHNOCRATS
             </a>
