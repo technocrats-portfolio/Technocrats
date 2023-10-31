@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './NavBar/Navbar'
+
 import './Home.css'
 
 import ProjectsApi from './Api/ProjectsApi'
