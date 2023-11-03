@@ -103,8 +103,8 @@ const Home = () => {
         <div class="container-fluid p-5" >
 
           <div class="row">
-            <div className="col-md-6 ">
-              <h1 class="display-1 height-cyberoide fw-bold">
+            <div className="col-md-6">
+              <h1 class="display-2 height-cyberoide fw-bold">
                 TECHNOCRATS
               </h1>
 
