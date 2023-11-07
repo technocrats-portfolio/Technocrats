@@ -103,9 +103,9 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
           <div class="row">
             <div className="col-md-6 d-flex flex-column justify-content-center">
-              <h1 class="display-2 height-cyberoide fw-bold">
+              {/* <h1 class="display-2 height-cyberoide fw-bold">
                 TECHNOCRATS
-              </h1>
+              </h1> */}
 
               <p className='lead pt-4 pb-4 hide text-align ' style={{ textAlign: 'justify' }}> <span className='text-light fw-bold' >Technocrats </span> 
               A five-member freelance team excelling in web development, DevOps, design, video editing, and app development. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation."
@@ -113,13 +113,9 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
               <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
             </div>
             <div className="col-md-6">
-              <img src="Images/header.png" style={{ maxWidth: '100%' }} alt="" />
+              <img src="Images/banner.png" style={{ maxWidth: '100%' }} alt="" />
             </div>
           </div>
-
-
-
-
         </div>
 
       </section>
@@ -177,36 +173,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
       </section>
 
 
-      <section class="4 box1 mb-4">
-        <div class="container">
-          <div class="row gy-3">
-            <div class="col-lg-3 col-sm-6">
-              <div class="card-sec4">
-                <i class="fa-solid fa-3x fa-handshake mb-4"></i>
-                <p class="para-sec4">Commitment</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="card-sec4">
-                <i class="fa-solid fa-3x fa-lightbulb mb-4"></i>
-                <p class="para-sec4">Innovation</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="card-sec4">
-                <i class="fa-solid fa-3x fa-people-group mb-4"></i>
-                <p class="para-sec4">Team Work</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="card-sec4">
-                <i class="fa-solid fa-3x fa-bolt mb-4"></i>
-                <p class="para-sec4">Quality</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
       <section class="sec5 pt-5 pb-5">
         <div class="container sec5-container" style={{ flexDirection: 'column' }}>
           <div class="div1-sec5">
@@ -222,13 +189,13 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
           <div class="div3-sec5">
             <div class="card-sec5">
               <i class="fa-solid fa-medal fa-3x mb-3"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={3} duration={2} delay={0} />}</h1>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={5} duration={2} delay={0} />}</h1>
               <p class="sec5-card-para">Experience</p>
             </div>
             <div class="card-sec5">
               <i class="fa-solid fa-people-group fa-3x mb-3"></i>
               <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-                <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={100} duration={2} delay={0} />}</h1>
+                <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={15} duration={2} delay={0} />}</h1>
               </ScrollTrigger>
               <p class="sec5-card-para">Members</p>
             </div>
@@ -239,8 +206,8 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
             </div>
             <div class="card-sec5">
               <i class="fa-solid fa-magic-wand-sparkles fa-3x mb-3"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={30} duration={2} delay={0} />}</h1>
-              <p class="sec5-card-para">Events</p>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={80} duration={2} delay={0} />}</h1>
+              <p class="sec5-card-para">Projects</p>
             </div>
           </div>
         </div>

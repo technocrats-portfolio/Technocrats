@@ -4,6 +4,7 @@ h1{
   font-family: 'Roboto Condensed', sans-serif;
 
 }
+
      .test{
       display: flex;
       flex-direction: column;
@@ -53,7 +54,13 @@ h1{
     } 
     .sec1{
       margin-top: 1px;
-       background-color: var(--header);
+      background-image: url("../public/videos/banner-video.gif"); /* The image used */
+      background-color: #cccccc; /* Used if the image is unavailable */
+       /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* 
+       /* background-color: var(--header); */
     }
  
   
@@ -163,7 +170,7 @@ h1{
   ---------------------------------------------------------------------------------------------------------- */
   
   .sec5 {
-    background-color: rgb(59, 49, 95);
+    background-color: #0C4773;
   }
   
   
