@@ -77,8 +77,7 @@ const Home = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_wruolwk', 'template_zg5u38k', e.target, 'u-XYTvIbVtz2HVSiT')
+emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAVvb5p')
     // e.target.reset();
   };
 
@@ -330,8 +329,8 @@ const Home = () => {
 
                       <div className="row">
                         <div className="contact-input-feild">
-                          <label htmlFor="" className="ml-1">Contact No.*</label>
-                          <input type="tel" className="form-control  contact-input-feild-sub" id="contact-input-height" name="contactno" placeholder="Contact Number" maxLength={11} minLength={11} required></input>
+                          <label htmlFor="" className="ml-1">Contact No</label>
+                          <input type="tel" className="form-control  contact-input-feild-sub" id="contact-input-height" name="contactno" placeholder="Contact Number" maxLength={11} minLength={11} ></input>
                         </div>
                         <div className="contact-input-feild">
                           <label htmlFor="" className="ml-1">Email*</label>
@@ -353,14 +352,31 @@ const Home = () => {
 
                           <select name="service" class="form-select contact-input-feild-sub" aria-label="Default select example" required>
                             <option selected>Open this select menu</option>
-                            <option value="Technical Recruitment">Bits&Bytes</option>
-                            <option value="DevSecOps">Shaoor Society</option>
-                            <option value="Content Writing"> Islamic Society</option>
-                            <option value="Software Quality Assurance"> Blood Donor</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="App Development">App Development</option>
+                            <option value="Graphics">Graphics</option>
+                            <option value="DevOps">DevOps</option>
+                            <option value="Others">Others</option>
                           </select>
                         </div>
                       </div>
+                      <div className="row mt-3">
+                        <div className="contact-input-feild">
+                          <label htmlFor="" className="ml-1">Description*</label>
+                          <textarea
+                            type="text"
+                            name="description"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            className="form-control contact-input-feild-sub"
+                            placeholder="Please provide a concise description of the project."
+                            required
 
+                          />
+                        </div>
+
+
+                      </div>
 
                       <button
                         type="submit"
