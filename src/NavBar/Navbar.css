@@ -1,3 +1,9 @@
 .navbar-toggler{
     border: 1px solid #c79898;
 }
+
+@media (max-width: 950px) {
+    .navbar-brand img {
+        height: 2rem;
+    }
+  }
