@@ -3,7 +3,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-      <nav class="navbar navbar-expand-lg fixed-top" style={{background:'#fff'}}>
+      <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style={{background:'#fff'}}>
     <div class="container " style={{padding:'0.5rem'}} >
     <a class="navbar-brand fw-bold"  href='/'  >
                 <img src="Images/technocrats-logo-01.png" alt='' height="50"/>

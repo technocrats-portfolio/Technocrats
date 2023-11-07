@@ -119,6 +119,45 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
         </div>
 
       </section>
+      <section className="services-cards" id='services'>
+        <div class="header">
+          <h1>Services</h1>
+          {/* <h1>Powered by AUCIS</h1> */}
+        </div>
+        <div class="row1-container">
+          <div class="box box-down cyan">
+            <h2>DevOps</h2>
+            <p>Streamlining your operations for efficiency and reliability in the digital age.</p>
+            <img src="https://www.svgrepo.com/show/362814/infinity-bold.svg" alt=""  width='80' height='80'/>
+          </div>
+
+          <div class="box red">
+            <h2>Web Development</h2>
+            <p>Crafting interactive and responsive websites tailored to your unique needs.</p>
+            <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="" />
+          </div>
+
+          <div class="box box-down blue">
+            <h2>App Development </h2>
+            <p>Enhancing online shopping experiences and boosting sales.</p>
+            <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="" />
+          </div>
+        </div>
+        <div class="row2-container">
+          <div class="box orange">
+            <h2>Graphics</h2>
+            <p>Creating captivating visuals and dynamic content to engage your audience</p>
+            <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      
+
+
+     
+     
+
+{/* 
       <section class="sec2 box1">
         <div class="container">
           <div class="row gy-3 justify-content-center">
@@ -170,10 +209,24 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
             </div>
           </div>
         </div>
+      </section> */}
+   
+   
+
+      <section className="container text-center mt-5" id='projects'>
+      <div class="div1-sec5">
+            <div class="span1"></div>
+            <div class="span2"></div>
+            <p class="sec5-top">Our Projects</p>
+            <div class="span2"></div>
+            <div class="span1"></div>
+          </div>
+        <h1 class="fw-bold text-center mb-5 mt-3">Recently Completed Projects</h1>
+        <Nav filterItem={filteritems} menuList={menuList} />
+        <ProjectCards MenuData={MenuData} />
       </section>
 
 
-     
       <section class="sec5 pt-5 pb-5">
         <div class="container sec5-container" style={{ flexDirection: 'column' }}>
           <div class="div1-sec5">
@@ -213,58 +266,10 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
         </div>
       </section>
 
-
-   
-      <section className="services-cards" id='services'>
-        <div class="header">
-          <h1>Services</h1>
-          {/* <h1>Powered by AUCIS</h1> */}
-        </div>
-        <div class="row1-container">
-          <div class="box box-down cyan">
-            <h2>DevOps</h2>
-            <p>Streamlining your operations for efficiency and reliability in the digital age.</p>
-            <img src="https://www.svgrepo.com/show/362814/infinity-bold.svg" alt=""  width='80' height='80'/>
-          </div>
-
-          <div class="box red">
-            <h2>Web Development</h2>
-            <p>Crafting interactive and responsive websites tailored to your unique needs.</p>
-            <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="" />
-          </div>
-
-          <div class="box box-down blue">
-            <h2>App Development </h2>
-            <p>Enhancing online shopping experiences and boosting sales.</p>
-            <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="" />
-          </div>
-        </div>
-        <div class="row2-container">
-          <div class="box orange">
-            <h2>Graphics</h2>
-            <p>Creating captivating visuals and dynamic content to engage your audience</p>
-            <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section className="container text-center mt-5" id='projects'>
-      <div class="div1-sec5">
-            <div class="span1"></div>
-            <div class="span2"></div>
-            <p class="sec5-top">Our Projects</p>
-            <div class="span2"></div>
-            <div class="span1"></div>
-          </div>
-        <h1 class="fw-bold text-center mb-5 mt-3">Recently Completed Projects</h1>
-        <Nav filterItem={filteritems} menuList={menuList} />
-        <ProjectCards MenuData={MenuData} />
-      </section>
-
-      <section className="contact box1" id='contact'>
+      <section className="contact box1 " id='contact'>
         <div className='contactus-section'>
-          <div className="contact-us container">
-            <div className="test1">
+          <div className="contact-us  container">
+            <div className="test1 shadow-lg ">
               <div className="text-center">
                 <h2 className="main-heading fw-bold">
                   Contact Us

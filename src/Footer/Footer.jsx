@@ -36,7 +36,7 @@ const Footer = () => {
 
        <div className='footer-part'>
        <h3>Contact Us</h3>
-       <p><a href="mailto:tech@gmail.com">tech@gmail.com</a></p>
+       <p><a href="mailto:contact.technocrats.tech@gmail.com">contact.technocrats.tech@gmail.com</a></p>
        <p><a href="tel:+923034737508">+92 3034737508</a></p>
        
        <form>
@@ -51,7 +51,7 @@ const Footer = () => {
     </div>
    </section>
 
-   <section className='bg-dark pt-4 pb-4'>
+   <section className=' pt-3 pb-1' style={{backgroundColor:'#0C4773'}}>
    <p class="text-center text-light">© 2023 Technocrats. All rights reserved.</p>
    </section>
    </>
