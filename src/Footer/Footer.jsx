@@ -18,9 +18,9 @@ const Footer = () => {
       
       <div className=' footer-part'>
        <h3>Services</h3>
-       <p>Full Stack Developer</p>
+       <p>Full Stack Development</p>
        <p>Graphic Designing</p>
-       <p>Mobile App Developer</p>
+       <p>Mobile App Development</p>
        <p>DevOps</p>
        
       </div>

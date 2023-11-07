@@ -6,8 +6,8 @@ const Navbar = () => {
       <nav class="navbar navbar-expand-lg fixed-top" style={{background:'#fff'}}>
     <div class="container " style={{padding:'0.5rem'}} >
     <a class="navbar-brand fw-bold"  href='/'  >
-                {/* <img src="Images/logo.png" alt='' height="50"/> */}
-                TECHNOCRATS
+                <img src="Images/technocrats-logo-01.png" alt='' height="50"/>
+                {/* TECHNOCRATS */}
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

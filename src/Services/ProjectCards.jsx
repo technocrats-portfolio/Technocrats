@@ -17,6 +17,8 @@ const ProjectCards = (props) => {
                                                 <h7 className="fw-bold">{category}</h7><br />
                                                 <p class="">{Date}</p>
                                                 <p class="small text-muted">{title}</p>
+
+                                                
                                             </div>
                                         </div>
                                     </div>

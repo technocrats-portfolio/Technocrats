@@ -27,15 +27,15 @@ const ProjectCards = (props) => {
         <div class="row pb-5 mb-4">
           {
             props.MenuData.map((curElem) => {
-              const { id, logo, title, category, Date } = curElem;
+              const { id, logo, category, Date } = curElem;
               return (
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" key={id}>
+                <div class="col-lg-3 col-md-6  mt-5 mb-lg-0" key={id}>
                   <div class="card shadow-sm border-0 rounded">
-                    <div class="card-body p-0"><img src={logo} alt="" class="w-100 card-img-top" />
+                    <div class="card-body p-3"><img src={logo} alt=""  class="w-100  card-img-top" style={{height:'10rem'}}/>
                       <div class="p-4">
                         <h7 className="fw-bold">{category}</h7><br />
                         <p class="">{Date}</p>
-                        <p class="small text-muted">{title}</p>
+                        {/* <p class="small text-muted">{title}</p> */}
                       </div>
                     </div>
                   </div>
@@ -103,13 +103,15 @@ const Home = () => {
         <div class="container-fluid p-5" >
 
           <div class="row">
-            <div className="col-md-6">
+            <div className="col-md-6 d-flex flex-column justify-content-center">
               <h1 class="display-2 height-cyberoide fw-bold">
                 TECHNOCRATS
               </h1>
 
-              <p className='lead pt-4 pb-4 hide text-align ' style={{ textAlign: 'justify' }}> <span className='text-light fw-bold' >Technocrats</span> is a dynamic collective of five freelance experts dedicated to elevating digital experiences. Specializing in web development, DevOps, graphic design, video editing, and app development, we merge cutting-edge technology with creative prowess to bring your digital visions to life. Our unwavering commitment to quality, client satisfaction, and innovation drives us to craft responsive websites, streamline operations, create captivating visuals, and develop feature-rich applications, empowering businesses and individuals in an ever-evolving digital landscape.</p>
-              <a class="btn btn-contact shadow btn-lg " href='#contact' role="button">Contact Us</a>
+              <p className='lead pt-4 pb-4 hide text-align ' style={{ textAlign: 'justify' }}> <span className='text-light fw-bold' >Technocrats </span> 
+              A five-member freelance team excelling in web development, DevOps, design, video editing, and app development. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation."
+              </p>
+              <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
             </div>
             <div className="col-md-6">
               <img src="Images/header.png" style={{ maxWidth: '100%' }} alt="" />
@@ -176,7 +178,7 @@ const Home = () => {
       </section>
 
 
-      <section class="4 box1">
+      <section class="4 box1 mb-4">
         <div class="container">
           <div class="row gy-3">
             <div class="col-lg-3 col-sm-6">
@@ -256,7 +258,7 @@ const Home = () => {
           <div class="box box-down cyan">
             <h2>DevOps</h2>
             <p>Streamlining your operations for efficiency and reliability in the digital age.</p>
-            <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="" />
+            <img src="https://www.svgrepo.com/show/362814/infinity-bold.svg" alt=""  width='80' height='80'/>
           </div>
 
           <div class="box red">
@@ -273,7 +275,7 @@ const Home = () => {
         </div>
         <div class="row2-container">
           <div class="box orange">
-            <h2>Graphic Designer</h2>
+            <h2>Graphics</h2>
             <p>Creating captivating visuals and dynamic content to engage your audience</p>
             <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="" />
           </div>
@@ -281,8 +283,14 @@ const Home = () => {
       </section>
 
       <section className="container text-center mt-5" id='projects'>
-        <p class="section-title text-secondary justify-content-center"><span></span>Our Projects<span></span></p>
-        <h1 class="text-center mb-5">Recently Completed Projects</h1>
+      <div class="div1-sec5">
+            <div class="span1"></div>
+            <div class="span2"></div>
+            <p class="sec5-top">Our Projects</p>
+            <div class="span2"></div>
+            <div class="span1"></div>
+          </div>
+        <h1 class="fw-bold text-center mb-5 mt-3">Recently Completed Projects</h1>
         <Nav filterItem={filteritems} menuList={menuList} />
         <ProjectCards MenuData={MenuData} />
       </section>
