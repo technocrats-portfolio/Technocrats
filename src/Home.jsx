@@ -22,7 +22,7 @@ const uniqueList = [
 const ProjectCards = (props) => {
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mt-2">
 
         <div class="row pb-5 mb-4">
           {
@@ -54,24 +54,22 @@ const Nav = ({ filterItem, menuList }) => {
   return (
     <>
       <div className="container">
-        <nav className="navbar-team" >
+        <nav className="navbar-team">
           <div className="row">
-            {
-              menuList.map((curElem) => {
-                return (
-                  <div className="col-md-2 mt-2">
-                    <button className="btn " style={{ background: 'var(--buttons)', width: '10rem' }} onClick={() => filterItem(curElem)}>{curElem}</button>
-                  </div>
-                )
-              })
-            }
-
+            <div className="col-md-2 mt-2">
+              <select className="form-select  form-select-lg " style={{width:'23rem'}}  onChange={(e) => filterItem(e.target.value)}>
+                {menuList.map((curElem, index) => (
+                  <option key={index} value={curElem}>{curElem}</option>
+                ))}
+              </select>
+            </div>
           </div>
         </nav>
       </div>
     </>
-  )
-}
+  );
+};
+
 const Home = () => {
   const [counterOn, setCounterOn] = useState(false)
   const form = useRef();
@@ -107,7 +105,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                 TECHNOCRATS
               </h1> */}
 
-              <p className='lead pt-4 pb-4 hide text-align ' style={{ textAlign: 'justify' }}> <span className='text-light fw-bold' >Technocrats </span> 
+              <p className='lead pt-5 pb-4 hide text-align ' style={{ textAlign: 'justify' }}> <span className='text-light fw-bold' >Technocrats </span> 
               A five-member freelance team excelling in web development, DevOps, design, video editing, and app development. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation."
               </p>
               <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
@@ -120,7 +118,9 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
       </section>
       <section className="services-cards" id='services'>
+        
         <div class="header">
+          
           <h1>Services</h1>
           {/* <h1>Powered by AUCIS</h1> */}
         </div>
@@ -214,14 +214,8 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
    
 
       <section className="container text-center mt-5" id='projects'>
-      <div class="div1-sec5">
-            <div class="span1"></div>
-            <div class="span2"></div>
-            <p class="sec5-top">Our Projects</p>
-            <div class="span2"></div>
-            <div class="span1"></div>
-          </div>
-        <h1 class="fw-bold text-center mb-5 mt-3">Recently Completed Projects</h1>
+      
+        <h1 class="fw-bold text-center mb-5 mt-3">Recent Projects</h1>
         <Nav filterItem={filteritems} menuList={menuList} />
         <ProjectCards MenuData={MenuData} />
       </section>
