@@ -346,6 +346,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                       </div>
 
                       <button
+                      style={{"background-color":"#FF914E","font-weight":"400"}}
                         type="submit"
                         className="btn btn-warning shadow btn-lg mt-4 mb-5"
                         onClick={notify}
