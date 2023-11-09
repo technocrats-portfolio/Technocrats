@@ -1,8 +1,7 @@
 import React from 'react'
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
-import { BsFacebook } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
+import { AiFillGithub } from 'react-icons/ai';
 import './Footer.css'
 const Footer = () => {
   return (
@@ -28,9 +27,9 @@ const Footer = () => {
       <div className='footer-part'>
        <h3>Quick Links </h3>
      
-      <p  className='mt-1'> <a href='#services'>Services</a> </p>
-     <p className='mt-1'>  <a href='#projects'>Projects</a> </p>
-     <p className='mt-1'>  <a href='#contact'>Contact Us</a> </p>
+      <p  className='mt-1'> <a href='/#services'>Services</a> </p>
+     <p className='mt-1'>  <a href='/#projects'>Projects</a> </p>
+     <p className='mt-1'>  <a href='/#contact'>Contact Us</a> </p>
       {/* <p> <Link to="/about">About Us </Link></p> */}
        {/* <p className='mt-1'>Gallery</p> */}
       </div>
@@ -44,8 +43,7 @@ const Footer = () => {
           <ul class="list-unstyled d-flex icon-f">
         <li class="ms-3"><a class="text-white " href="/#"><AiOutlineTwitter className='icon'/></a></li>
         <li class="ms-3"><a class="text-white " href="https://www.linkedin.com/company/cyberoide-tech/"><AiFillLinkedin className='icon'/></a></li>
-        <li class="ms-3"><a class="text-white " href="/#"><BsFacebook className='icon'/></a></li>
-        <li class="ms-3"><a class="text-white " href="/#"><BsInstagram className='icon'/></a></li>
+        <li class="ms-3"><a class="text-white " href="https://github.com/technocrats-portfolio/Technocrats"><AiFillGithub className='icon'/></a></li>
       </ul>
         </form>
       </div>

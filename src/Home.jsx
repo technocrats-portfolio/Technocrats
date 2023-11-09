@@ -60,6 +60,8 @@ const Nav = ({ filterItem, menuList }) => {
           <div className="row">
             <div className="col-md-2 mt-2">
               <select className="form-select  form-select-lg " style={{width:'16rem'}}  onChange={(e) => filterItem(e.target.value)}>
+                
+                <option >Select Service</option>
                 {menuList.map((curElem, index) => (
                   <option key={index} value={curElem}>{curElem}</option>
                 ))}
@@ -108,7 +110,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
       <h2>We CODE </h2> 
       <h3>Your Dreams</h3>
       <p> A Five Member & Growing Group Of Technical Elite At Your Service. Excelling in web development, DevOps, App Development and Graphics. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation.</p>
-      <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
+      <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='/#contact' role="button">Contact Us</a>
       </div>
       <img src="Images/banner.png"  style={{ maxWidth: '40%',position:'relative' }} alt="" />
     </div>
@@ -119,7 +121,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
         
         <div class="header">
           
-          <h1>Services</h1>
+          <h1 class="fw-bold text-center mb-5 mt-3 text-decoration-underline">Services</h1>
           {/* <h1>Powered by AUCIS</h1> */}
         </div>
         <div class="row1-container">
@@ -213,12 +215,140 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
       <section className="container text-center mt-5" id='projects'>
       
-        <h1 class="fw-bold text-center mb-5 mt-3">Recent Projects</h1>
+        <h1 class="fw-bold text-center mb-5 mt-3 text-decoration-underline">Recent Projects</h1>
         <Nav filterItem={filteritems} menuList={menuList} />
         <ProjectCards MenuData={MenuData} />
       </section>
 
 
+        <div class="container-xxl py-5" id='team'>
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s" >
+                   
+                    <h1 class="fw-bold text-center mb-5 mt-3 text-decoration-underline">Our Team</h1>
+                </div>
+                <div class="row g-3 justify-content-center">
+                 
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+                        <div class="team-item bg-light rounded" style={{height:'28.5rem'}}>
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="Images/Awab.jpeg" 
+                                style={{width:'100%',height:'100%'}}
+                                    alt="Awab" />
+                                <h5>Muhammad Awab</h5>
+                                <span>DevOps Engineer</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1"
+                                    href="https://github.com/Muhammad-Awab"><i
+                                        class="fab fa-github"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://twitter.com/MuhammadawabAh2"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/muhammadawab/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"  src="Images/huzaifa.jpg"
+                                 style={{width:'100%',height:'100%'}}
+                                    alt="Huzaifa" />
+                                <h5>Huzaifa Azhar</h5>
+                                <span>Web Developer</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1"
+                                    href="https://github.com/HuzaifaAzhar"><i
+                                        class="fab fa-github"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="http://x.com/Chaos_AhoyI"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/huzaifa-azhar-tarar-bb4b6b99/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="Images/ahad.jpg" alt="ahad" 
+                                style={{width:'100%',height:'100%'}}
+                                />
+                                <h5>Abdul Ahad ALi</h5>
+                                <span>App Developer</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1"
+                                    href="https://github.com/AbdulAhad210904"><i
+                                        class="fab fa-github"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://twitter.com/AbdulAhad210904?t=EZE6ngIdV5V1vPPTd_PXLg&s=09"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/abdul-ahad-ali-215000250"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+
+                <div className='row justify-content-center mt-4 g-3 '>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="Images/taha.jpg"
+                                style={{width:'100%',height:'100%'}}
+                                    alt="taha" />
+                                    <h5>Taha Shayan</h5>
+                                <span>Data Analyst</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1"
+                                    href="https://github.com/Tahashayan"><i
+                                        class="fab fa-github"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://twitter.com/TAHASHAYAN2"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/muhammad-taha-shayan-837984260/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="Images/sohaib.jpeg"
+                                style={{width:'100%',height:'100%'}}
+                                    alt="sohaib" />
+                                    <h5>Sohaib Asif</h5>
+                                <span>Web Developer(Internee)</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1"
+                                    href="https://github.com/SohaibAsif-5602"><i
+                                        class="fab fa-github"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://twitter.com/SohaibAsif5602"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/sohaib-asif-97a541292/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
       <section class="sec5 pt-5 pb-5">
         <div class="container sec5-container" style={{ flexDirection: 'column' }}>
           <div class="div1-sec5">
@@ -258,7 +388,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
         </div>
       </section>
 
-      <h1 class="fw-bold text-center mt-5 pb-3">Get in Touch</h1>
+      <h1 class="fw-bold text-center mt-5 pb-3 text-decoration-underline">Get in Touch</h1>
       <section className="contact box1 pt-0" id='contact'>
         <div className='contactus-section'>
           <div className="contact-us  container">
