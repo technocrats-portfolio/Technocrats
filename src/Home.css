@@ -51,7 +51,7 @@ header .logo
 }
 .showcase
 {
-  position: absolute;
+  position: relative;
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -217,7 +217,7 @@ header .logo
       justify-content: center;
      }
      .btn-contact{
-      background-color: #ff914e;
+      background-color: #ff914e !important;
       color: white;
      }
       /* Bottom left text */

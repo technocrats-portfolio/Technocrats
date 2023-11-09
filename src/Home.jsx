@@ -105,15 +105,12 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
     <div className='banner-pro d-flex '>
     <div class="text">
-      <h2>Never Stop To </h2> 
-      <h3>Exploring The World</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-      <a href="#">Explore</a>
+      <h2>We CODE </h2> 
+      <h3>Your Dreams</h3>
+      <p> A Five Member & Growing Group Of Technical Elite At Your Service. Excelling in web development, DevOps, App Development and Graphics. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation.</p>
+      <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
       </div>
-      <img src="Images/banner.png" style={{ maxWidth: '40%' }} alt="" />
+      <img src="Images/banner.png" style={{ maxWidth: '40%',position:'relative' }} alt="" />
     </div>
   
   </section>
