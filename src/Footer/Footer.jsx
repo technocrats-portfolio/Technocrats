@@ -10,7 +10,7 @@ const Footer = () => {
 <>
    <section className='footer-color pt-5 pb-5 shadow-lg mt-5'> 
 
-    <div className='footer-section mt-5'>
+    <div className='footer-section'>
       <div className='footer-part'>
         <h3 className='footer-logo'>TECHNOCRATS</h3>
         <p>With a relentless pursuit of excellence, we design, develop, and innovate to help you thrive in the digital age. Let us turn your ideas into reality and your challenges into opportunities. Connect with us today to embark on a journey of digital transformation.</p>
