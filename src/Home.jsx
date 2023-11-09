@@ -105,7 +105,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                 TECHNOCRATS
               </h1> */}
 
-              <p className='lead pt-5 pb-4 hide text-align ' style={{ textAlign: 'justify' }}>
+              <p className='lead pt-5 pb-4 hide text-align' style={{ textAlign: 'justify' }}>
                  {/* <span className='text-light fw-bold' >Technocrats </span>  */}
               A Five Member & Growing Group Of Technical Elite At Your Service. Excelling in web development, DevOps, App Development and Graphics. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation.
               </p>
@@ -122,7 +122,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
         
         <div class="header">
           
-          <h1>Services</h1>
+        <h1 class="fw-bold text-center mb-5 mt-3">Services</h1>
           {/* <h1>Powered by AUCIS</h1> */}
         </div>
         <div class="row1-container">
@@ -260,20 +260,13 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
           </div>
         </div>
       </section>
-
-      <section className="contact box1 " id='contact'>
+      <h1 class="fw-bold text-center mt-5 pb-3">Get in Touch</h1>
+      <section className="contact box1 pt-0" id='contact'>
         <div className='contactus-section'>
           <div className="contact-us  container">
             <div className="test1 shadow-lg ">
-              <div className="text-center">
-                <h2 className="main-heading fw-bold">
-                  Contact Us
-                </h2>
-              </div>
               <div className="col-lg-12 ">
                 <div className="row">
-
-
                   {/* right side contact form  */}
                   <div className="col-md-12">
                     <form ref={form} onSubmit={sendEmail}>
@@ -336,7 +329,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                             id="exampleFormControlTextarea1"
                             rows="3"
                             className="form-control contact-input-feild-sub"
-                            placeholder="Please provide a concise description of the project."
+                            placeholder="Please provide a concise description about the project."
                             required
 
                           />
@@ -346,9 +339,9 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                       </div>
 
                       <button
-                      style={{"background-color":"#FF914E","font-weight":"400"}}
+                      style={{"background-color":"#FF914E","font-weight":"400","width":"8rem"}}
                         type="submit"
-                        className="btn btn-warning shadow btn-lg mt-4 mb-5"
+                        className="btn btn-warning shadow btn-lg mt-2 mb-1 mx-auto d-flex justify-content-center"
                         onClick={notify}
                       >
                         Submit
