@@ -237,24 +237,24 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
           <div class="div3-sec5">
             <div class="card-sec5">
               <i class="fa-solid fa-medal fa-3x mb-3"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={5} duration={2} delay={0} />}</h1>
-              <p class="sec5-card-para">Experience</p>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={5} duration={2} delay={0} />}+</h1>
+              <p class="sec5-card-para">Years of Experience</p>
             </div>
             <div class="card-sec5">
               <i class="fa-solid fa-people-group fa-3x mb-3"></i>
               <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-                <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={15} duration={2} delay={0} />}</h1>
+                <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={5} duration={2} delay={0} />}</h1>
               </ScrollTrigger>
               <p class="sec5-card-para">Members</p>
             </div>
             <div class="card-sec5">
               <i class="fa fa-address-book fa-3x mb-3" aria-hidden="true"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={10} duration={2} delay={0} />}</h1>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={3} duration={2} delay={0} />}</h1>
               <p class="sec5-card-para">Clients</p>
             </div>
             <div class="card-sec5">
               <i class="fa-solid fa-magic-wand-sparkles fa-3x mb-3"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={80} duration={2} delay={0} />}</h1>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={50} duration={2} delay={0} />}+</h1>
               <p class="sec5-card-para">Projects</p>
             </div>
           </div>
@@ -315,10 +315,10 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
                       <div className="row">
                         <div className=" ">
-                          <label htmlFor="" className="ml-1">Select Society*</label>
+                          <label htmlFor="" className="ml-1">Select Service*</label>
 
                           <select name="service" class="form-select contact-input-feild-sub" aria-label="Default select example" required>
-                            <option selected>Open this select menu</option>
+                            <option selected>Choose an option</option>
                             <option value="Web Development">Web Development</option>
                             <option value="App Development">App Development</option>
                             <option value="Graphics">Graphics</option>
