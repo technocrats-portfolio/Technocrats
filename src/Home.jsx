@@ -110,7 +110,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
       <p> A Five Member & Growing Group Of Technical Elite At Your Service. Excelling in web development, DevOps, App Development and Graphics. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation.</p>
       <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
       </div>
-      <img src="Images/banner.png" style={{ maxWidth: '40%',position:'relative' }} alt="" />
+      <img src="Images/banner.png"  style={{ maxWidth: '40%',position:'relative' }} alt="" />
     </div>
   
   </section>
@@ -251,7 +251,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
             </div>
             <div class="card-sec5">
               <i class="fa-solid fa-magic-wand-sparkles fa-3x mb-3"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={50} duration={2} delay={0} />}</h1>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={50} duration={2} delay={0} />}+</h1>
               <p class="sec5-card-para">Projects</p>
             </div>
           </div>
