@@ -105,8 +105,9 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                 TECHNOCRATS
               </h1> */}
 
-              <p className='lead pt-5 pb-4 hide text-align ' style={{ textAlign: 'justify' }}> <span className='text-light fw-bold' >Technocrats </span> 
-              A five-member freelance team excelling in web development, DevOps, design, video editing, and app development. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation."
+              <p className='lead pt-5 pb-4 hide text-align ' style={{ textAlign: 'justify' }}>
+                 {/* <span className='text-light fw-bold' >Technocrats </span>  */}
+              A Five Member & Growing Group Of Technical Elite At Your Service. Excelling in web development, DevOps, App Development and Graphics. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation.
               </p>
               <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
             </div>
