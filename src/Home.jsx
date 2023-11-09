@@ -102,7 +102,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
 <section class="showcase">
    
-    <video src="Videos/banner-video.mp4" muted="muted" loop="loop" autoplay="autoplay"></video>
+    <video src="Videos/banner-video.mp4" muted="muted" loop="loop" playsInline autoplay="autoplay"></video>
     <div class="overlay"></div>
 
     <div className='banner-pro d-flex '>
