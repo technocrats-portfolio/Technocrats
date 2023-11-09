@@ -266,7 +266,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                                     href="https://github.com/HuzaifaAzhar"><i
                                         class="fab fa-github"></i></a>
                                 <a class="btn btn-square mx-1"
-                                    href="http://x.com/Chaos_AhoyI"><i
+                                    href="http://x.com/Chaos_Ahoy"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square mx-1"
                                     href="https://www.linkedin.com/in/huzaifa-azhar-tarar-bb4b6b99/"><i
@@ -280,7 +280,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                                 <img class="img-fluid rounded-circle mb-4" src="Images/ahad.jpg" alt="ahad" 
                                 style={{width:'100%',height:'100%'}}
                                 />
-                                <h5>Abdul Ahad ALi</h5>
+                                <h5>Abdul Ahad Ali</h5>
                                 <span>App Developer</span>
                             </div>
                             <div class="d-flex justify-content-center p-4">
@@ -330,7 +330,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                                 style={{width:'100%',height:'100%'}}
                                     alt="sohaib" />
                                     <h5>Sohaib Asif</h5>
-                                <span>Web Developer(Internee)</span>
+                                <span>Web Developer</span>
                             </div>
                             <div class="d-flex justify-content-center p-4">
                                 <a class="btn btn-square mx-1"
