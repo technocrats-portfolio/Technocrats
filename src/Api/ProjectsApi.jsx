@@ -46,7 +46,21 @@ const ProjectsApi = [
         Date: "December 10,2021",
         title: "Design By Taha",
         logo: "Images/img-ev1.jpg",
-        category: "Graphic Designing"
+        category: "Graphics"
+    },
+    {
+        id: 8,
+        Date: "December 10,2021",
+        title: "Design By Taha",
+        logo: "Images/img-ev1.jpg",
+        category: "App Development"
+    },
+    {
+        id: 9,
+        Date: "December 10,2021",
+        title: "Design By Taha",
+        logo: "Images/img-ev1.jpg",
+        category: "DevOps"
     }
 ]
 export default ProjectsApi;

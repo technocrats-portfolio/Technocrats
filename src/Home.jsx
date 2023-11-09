@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 
 import './Home.css'
@@ -57,7 +59,7 @@ const Nav = ({ filterItem, menuList }) => {
         <nav className="navbar-team">
           <div className="row">
             <div className="col-md-2 mt-2">
-              <select className="form-select  form-select-lg " style={{width:'23rem'}}  onChange={(e) => filterItem(e.target.value)}>
+              <select className="form-select  form-select-lg " style={{width:'16rem'}}  onChange={(e) => filterItem(e.target.value)}>
                 {menuList.map((curElem, index) => (
                   <option key={index} value={curElem}>{curElem}</option>
                 ))}
@@ -95,28 +97,27 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
   return (
     <>
 
-      <section class="sec1  justify-content-middle" style={{ color: 'white',marginTop:'4rem' }}>
 
-        <div class="container-fluid p-5" >
+<section class="showcase">
+   
+    <video src="Videos/banner-video.mp4" muted="muted" loop="loop" autoplay="autoplay"></video>
+    <div class="overlay"></div>
 
-          <div class="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center">
-              {/* <h1 class="display-2 height-cyberoide fw-bold">
-                TECHNOCRATS
-              </h1> */}
-
-              <p className='lead pt-5 pb-4 hide text-align ' style={{ textAlign: 'justify' }}> <span className='text-light fw-bold' >Technocrats </span> 
-              A five-member freelance team excelling in web development, DevOps, design, video editing, and app development. We merge tech and creativity to bring digital visions to life, prioritizing quality, client satisfaction, and innovation."
-              </p>
-              <a class="btn btn-contact shadow btn-lg " style={{width:'fit-content'}} href='#contact' role="button">Contact Us</a>
-            </div>
-            <div className="col-md-6">
-              <img src="Images/banner.png" style={{ maxWidth: '100%' }} alt="" />
-            </div>
-          </div>
-        </div>
-
-      </section>
+    <div className='banner-pro d-flex '>
+    <div class="text">
+      <h2>Never Stop To </h2> 
+      <h3>Exploring The World</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+      <a href="#">Explore</a>
+      </div>
+      <img src="Images/banner.png" style={{ maxWidth: '40%' }} alt="" />
+    </div>
+  
+  </section>
+   
       <section className="services-cards" id='services'>
         
         <div class="header">
@@ -236,39 +237,36 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
           <div class="div3-sec5">
             <div class="card-sec5">
               <i class="fa-solid fa-medal fa-3x mb-3"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={5} duration={2} delay={0} />}</h1>
-              <p class="sec5-card-para">Experience</p>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={5} duration={2} delay={0} />}+</h1>
+              <p class="sec5-card-para">Years of Experience</p>
             </div>
             <div class="card-sec5">
               <i class="fa-solid fa-people-group fa-3x mb-3"></i>
               <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-                <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={15} duration={2} delay={0} />}</h1>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={5} duration={2} delay={0} />}</h1>
               </ScrollTrigger>
               <p class="sec5-card-para">Members</p>
             </div>
             <div class="card-sec5">
               <i class="fa fa-address-book fa-3x mb-3" aria-hidden="true"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={10} duration={2} delay={0} />}</h1>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={3} duration={2} delay={0} />}</h1>
               <p class="sec5-card-para">Clients</p>
             </div>
             <div class="card-sec5">
               <i class="fa-solid fa-magic-wand-sparkles fa-3x mb-3"></i>
-              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={80} duration={2} delay={0} />}</h1>
+              <h1 class="h1-sec5-card">{counterOn && <CountUp start={0} end={50} duration={2} delay={0} />}</h1>
               <p class="sec5-card-para">Projects</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="contact box1 " id='contact'>
+      <h1 class="fw-bold text-center mt-5 pb-3">Get in Touch</h1>
+      <section className="contact box1 pt-0" id='contact'>
         <div className='contactus-section'>
           <div className="contact-us  container">
             <div className="test1 shadow-lg ">
-              <div className="text-center">
-                <h2 className="main-heading fw-bold">
-                  Contact Us
-                </h2>
-              </div>
+             
               <div className="col-lg-12 ">
                 <div className="row">
 
@@ -314,10 +312,10 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
                       <div className="row">
                         <div className=" ">
-                          <label htmlFor="" className="ml-1">Select Society*</label>
+                          <label htmlFor="" className="ml-1">Select Service*</label>
 
                           <select name="service" class="form-select contact-input-feild-sub" aria-label="Default select example" required>
-                            <option selected>Open this select menu</option>
+                          <option selected>Choose an option</option>
                             <option value="Web Development">Web Development</option>
                             <option value="App Development">App Development</option>
                             <option value="Graphics">Graphics</option>
@@ -335,7 +333,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                             id="exampleFormControlTextarea1"
                             rows="3"
                             className="form-control contact-input-feild-sub"
-                            placeholder="Please provide a concise description of the project."
+                            placeholder="Please provide a concise description about the project."
                             required
 
                           />
@@ -345,8 +343,9 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
                       </div>
 
                       <button
+                          style={{"background-color":"#FF914E","font-weight":"400","width":"8rem"}}
                         type="submit"
-                        className="btn btn-warning shadow btn-lg mt-4 mb-5"
+                        className="btn btn-warning shadow btn-lg mt-2 mb-1 mx-auto d-flex justify-content-center"
                         onClick={notify}
                       >
                         Submit
