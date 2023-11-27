@@ -10,17 +10,17 @@ const ProjectsApi = [
         id: 2,
         Date: "December 10,2021",
         title: "Design By Awab",
-        logo: "Images/portfolio-web-2.jpg",
+        logo: "Images/Pharmacy.png",
         category: "Web Development"
     },
     {
         id: 3,
         Date: "December 10,2021",
         title: "Design By Awab",
-        logo: "Images/portfolio-web-3.jpg",
+        logo: "Images/Pkversity.png",
         category: "Web Development"
     },
-    {
+    {   
         id: 4,
         Date: "December 10,2021",
         title: "Design By Awab",
@@ -59,7 +59,7 @@ const ProjectsApi = [
         id: 9,
         Date: "December 10,2021",
         title: "Design By Taha",
-        logo: "Images/img-ev1.jpg",
+        logo: "Images/DevOps.png",
         category: "DevOps"
     }
 ]

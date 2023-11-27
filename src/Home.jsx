@@ -128,7 +128,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
           <div class="box box-down cyan">
             <h2>DevOps</h2>
             <p>Streamlining your operations for efficiency and reliability in the digital age.</p>
-            <img src="https://www.svgrepo.com/show/362814/infinity-bold.svg" alt=""  width='80' height='80'/>
+            <img src="Images/devops-icon.svg" alt=""  width='80' height='80'/>
           </div>
 
           <div class="box red">
@@ -139,7 +139,7 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
 
           <div class="box box-down blue">
             <h2>App Development </h2>
-            <p>Enhancing online shopping experiences and boosting sales.</p>
+            <p>Turning ideas into user friendly apps that shine.</p>
             <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="" />
           </div>
         </div>
@@ -216,7 +216,10 @@ emailjs.sendForm('service_j4qp323', 'template_1kitx3b', e.target, 'zbnOMBcyn0XAV
       <section className="container text-center mt-5" id='projects'>
       
         <h1 class="fw-bold text-center mb-5 mt-3 text-decoration-underline">Recent Projects</h1>
+        <div className='d-flex justify-content-between'>
         <Nav filterItem={filteritems} menuList={menuList} />
+        <a className='btn btn-warning w-20'>Show All</a>
+        </div> 
         <ProjectCards MenuData={MenuData} />
       </section>
 
